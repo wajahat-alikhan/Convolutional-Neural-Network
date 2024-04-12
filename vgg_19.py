@@ -40,7 +40,7 @@ def vgg_19():
     model.add(layers.Flatten())
     model.add(layers.Dense(4096, activation='relu'))
     model.add(layers.Dense(4096, activation='relu'))
-    model.add(layers.Dense(100, activation='softmax'))  # 100 classes for CIFAR-100 (CHange then the original paper as that was implemented for ImageNet with 1000 classes)
+    model.add(layers.Dense(100, activation='softmax'))  # 100 classes for CIFAR-100 (Change from the original paper as that was implemented for ImageNet with 1000 classes)
 
     return model
 
